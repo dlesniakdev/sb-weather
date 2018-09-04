@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactEcharts from 'echarts-for-react';
 import { gatherData } from './forecast';
 import { temperatureChart, humidityChart, pressureChart } from './chartDefinitionFactory'
-import { mt2 } from 'bootstrap-css-modules/css/marginTop.css';
+import { mt4 } from 'bootstrap-css-modules/css/marginTop.css';
 
 class Charts extends Component {
 
@@ -23,7 +23,7 @@ class Charts extends Component {
     headers.append("Authorization", "Basic dXNlcjp1c2Vy");
 
     return ({
-      uri: encodeURI('http://localhost:8080/api/sbforecast?city=a' + name),
+      uri: encodeURI('http://localhost:3000/api/sbforecast?city=a' + name),
       headers: headers
     })
   }

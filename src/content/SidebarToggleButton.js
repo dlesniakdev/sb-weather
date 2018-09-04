@@ -4,13 +4,6 @@ import { btn, btnInfo } from 'bootstrap-css-modules/css/buttons.css';
 import { mb2 } from 'bootstrap-css-modules/css/marginBottom.css';
 
 class SidebarToggleButton extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      supportedCities: ['London', 'Washington', 'New York']
-    };
-  }
-
   handleButtonClick = (e) => {
     var sidebar = ReactDOM.findDOMNode(document.getElementById('wrapper'));
     sidebar.classList.toggle('with-sidebar');

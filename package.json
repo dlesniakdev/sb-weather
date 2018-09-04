@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "ajv": "^6.5.3",
     "bootstrap-css-modules": "^4.2.1",
-    "echarts-for-react": "^2.0.13",
+    "echarts": "^4.1.0",
+    "echarts-for-react": "^2.0.14",
     "jquery": "^3.3.1",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
